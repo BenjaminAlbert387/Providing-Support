@@ -20,7 +20,7 @@ screen confidence_ui():
             text "Support Score (Offers appropriate help and collaborates on realistic adjustments): [support_score]"
 
         frame:
-            text "Accountability (Addresses the effect on colleagues and agrees clear expectations): [accountability_score]"
+            text "Accountability Score (Addresses the effect on colleagues and agrees clear expectations): [accountability_score]"
 label start:
 
     show screen confidence_ui
