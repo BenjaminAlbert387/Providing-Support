@@ -21,6 +21,26 @@ screen confidence_ui():
 
         frame:
             text "Accountability (Addresses the effect on colleagues and agrees clear expectations): [accountability_score]"
+label start:
+
+    show screen confidence_ui
+
+    "Welcome! To continue, please press left click on your mouse / tap your mousepad or screen while your cursor is on the game."
+
+    "Great! This is a simulated scenario based on Providing Support."
+
+    "Please note that this is a fictional video game, and there are no real names used."
+
+    "During the game, you will have the option to 'choose your response' through key points."
+
+    "There are no right or wrong answers, and many options will increase one or more scores while lowering others. That is life!"
+
+    "Once you are ready, press left click one more time and the simulated scenario will start!"
+
+    # Scenario Start
+
+    "Providing Support: Scenario Start!"
+
 
 scene black
 with fade
