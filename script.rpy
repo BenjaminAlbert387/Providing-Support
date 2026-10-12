@@ -64,54 +64,54 @@ y "{i}As a Trustee, I need to care about the people doing the work. But I also n
 menu:
     "How do you respond to Person D?"
 
-        "Tell Person D that the team needs them to start delivering on their commitments.":
-            $ empathy_score -= 1
-            $ support_score -= 1
-            $ accountability_score += 1
+    "Tell Person D that the team needs them to start delivering on their commitments.":
+        $ empathy_score -= 1
+        $ support_score -= 1
+        $ accountability_score += 1
 
-            y "I appreciate you being honest, but we need these tasks completed. Other people are having to pick up the work, and that's putting pressure on the team."
+        y "I appreciate you being honest, but we need these tasks completed. Other people are having to pick up the work, and that's putting pressure on the team."
 
-            d "I know. I've been feeling terrible about it."
+        d "I know. I've been feeling terrible about it."
 
-            y "Then we need to make sure it doesn't keep happening."
+        y "Then we need to make sure it doesn't keep happening."
 
-            d "Okay. I'll try to get things sorted."
+        d "Okay. I'll try to get things sorted."
 
-            y "{i}I've addressed the impact on the team, which is important. But I haven't really explored why Person D is struggling or whether there's a practical way to help them recover.{/i}"
+        y "{i}I've addressed the impact on the team, which is important. But I haven't really explored why Person D is struggling or whether there's a practical way to help them recover.{/i}"
 
-            y "{i}Accountability matters, but if the conversation ends with someone feeling worse and no clearer plan, we haven't solved much.{/i}"
+        y "{i}Accountability matters, but if the conversation ends with someone feeling worse and no clearer plan, we haven't solved much.{/i}"
 
-        "Ask how they're doing and give them room to explain.":
-            $ empathy_score += 2
-            $ support_score += 1
-            $ accountability_score += 0
+    "Ask how they're doing and give them room to explain.":
+        $ empathy_score += 2
+        $ support_score += 1
+        $ accountability_score += 0
 
-            y "You don't have to explain anything you're uncomfortable sharing, but I'm concerned about you. How have things been lately?"
+        y "You don't have to explain anything you're uncomfortable sharing, but I'm concerned about you. How have things been lately?"
 
-            d "Honestly? Pretty difficult."
+        d "Honestly? Pretty difficult."
 
-            y "I'm sorry to hear that. Do you want to talk about what's been making things difficult?"
+        y "I'm sorry to hear that. Do you want to talk about what's been making things difficult?"
 
-            d "A bit, yeah. I just didn't know how to bring it up."
+        d "A bit, yeah. I just didn't know how to bring it up."
 
-            y "{i}I'm not assuming I know the answer. I'm giving Person D an opportunity to explain their situation without having to defend themselves immediately.{/i}"
+        y "{i}I'm not assuming I know the answer. I'm giving Person D an opportunity to explain their situation without having to defend themselves immediately.{/i}"
 
-            y "{i}I still need to understand what happens with the unfinished work, but I don't need to solve that before I've listened.{/i}"
+        y "{i}I still need to understand what happens with the unfinished work, but I don't need to solve that before I've listened.{/i}"
 
-        "Avoid discussing it and move straight to the event agenda.":
-            $ empathy_score -= 1
-            $ support_score -= 1
-            $ accountability_score -= 1
+    "Avoid discussing it and move straight to the event agenda.":
+        $ empathy_score -= 1
+        $ support_score -= 1
+        $ accountability_score -= 1
 
-            y "We can discuss that another time. Let's get through the agenda first."
+        y "We can discuss that another time. Let's get through the agenda first."
 
-            d "Sure."
+        d "Sure."
 
-            "Person D opens the agenda but barely looks at it."
+        "Person D opens the agenda but barely looks at it."
 
-            y "{i}I've avoided an uncomfortable conversation, but the problem hasn't disappeared. Person D is still struggling, and the team still has unfinished work.{/i}"
+        y "{i}I've avoided an uncomfortable conversation, but the problem hasn't disappeared. Person D is still struggling, and the team still has unfinished work.{/i}"
 
-            y "{i}Keeping a meeting moving can be useful. Ignoring an issue that directly affects the team is a different matter.{/i}"
+        y "{i}Keeping a meeting moving can be useful. Ignoring an issue that directly affects the team is a different matter.{/i}"
 
 "Person D takes a breath."
 
@@ -140,58 +140,58 @@ y "{i}I need to avoid two extremes: expecting them to carry on as normal, or rem
 menu:
     "How do you help Person D manage their workload?"
 
-        "Take all their tasks away immediately so they can focus on their personal situation.":
-            $ empathy_score += 1
-            $ support_score += 1
-            $ accountability_score -= 1
+    "Take all their tasks away immediately so they can focus on their personal situation.":
+        $ empathy_score += 1
+        $ support_score += 1
+        $ accountability_score -= 1
 
-            y "Don't worry about the event. We'll take everything off your hands and sort it ourselves."
+        y "Don't worry about the event. We'll take everything off your hands and sort it ourselves."
 
-            d "Are you sure? I don't want to leave everyone else with even more work."
+        d "Are you sure? I don't want to leave everyone else with even more work."
 
-            y "We'll manage somehow."
+        y "We'll manage somehow."
 
-            d "I appreciate it, but I'd still like to contribute if I can."
+        d "I appreciate it, but I'd still like to contribute if I can."
 
-            y "{i}I'm trying to be supportive, but I've made the decision for Person D without asking what they feel able to do. I've also promised that the team can absorb the extra work without checking whether that's realistic.{/i}"
+        y "{i}I'm trying to be supportive, but I've made the decision for Person D without asking what they feel able to do. I've also promised that the team can absorb the extra work without checking whether that's realistic.{/i}"
 
-            y "{i}Support should give people options, not automatically remove their agency. I also need to make sure the remaining workload is fairly distributed.{/i}"
+        y "{i}Support should give people options, not automatically remove their agency. I also need to make sure the remaining workload is fairly distributed.{/i}"
 
-        "Agree on a smaller workload and redistribute the remaining tasks openly.":
-            $ empathy_score += 1
-            $ support_score += 2
-            $ accountability_score += 2
+    "Agree on a smaller workload and redistribute the remaining tasks openly.":
+        $ empathy_score += 1
+        $ support_score += 2
+        $ accountability_score += 2
 
-            y "What if we keep the promotional materials with you, since you think that's manageable, and move the volunteer rota to someone with more availability?"
+        y "What if we keep the promotional materials with you, since you think that's manageable, and move the volunteer rota to someone with more availability?"
 
-            y "We can also tell the team what's changing without sharing your private circumstances."
+        y "We can also tell the team what's changing without sharing your private circumstances."
 
-            d "That would help. I can focus on one thing instead of worrying about both."
+        d "That would help. I can focus on one thing instead of worrying about both."
 
-            y "Let's agree on a realistic deadline for the materials, and we'll check in before then. If your situation changes, tell me as early as you can so we can adjust."
+        y "Let's agree on a realistic deadline for the materials, and we'll check in before then. If your situation changes, tell me as early as you can so we can adjust."
 
-            d "I can do that. Thank you for not making me feel like I've failed at everything."
+        d "I can do that. Thank you for not making me feel like I've failed at everything."
 
-            y "You're dealing with a difficult situation. We still need to organise the work, but we can do that without making it personal."
+        y "You're dealing with a difficult situation. We still need to organise the work, but we can do that without making it personal."
 
-            y "{i}This feels more balanced. Person D retains a meaningful contribution, the team knows what needs covering, and we've agreed on a way to communicate if things change.{/i}"
+        y "{i}This feels more balanced. Person D retains a meaningful contribution, the team knows what needs covering, and we've agreed on a way to communicate if things change.{/i}"
 
-        "Tell Person D to take a break and return when they can manage everything again.":
-            $ empathy_score += 0
-            $ support_score -= 1
-            $ accountability_score -= 1
+    "Tell Person D to take a break and return when they can manage everything again.":
+        $ empathy_score += 0
+        $ support_score -= 1
+        $ accountability_score -= 1
 
-            y "Maybe you should step away until things settle down. Come back when you're able to manage the full workload."
+        y "Maybe you should step away until things settle down. Come back when you're able to manage the full workload."
 
-            d "I don't know how long that will be. I don't really want to leave completely."
+        d "I don't know how long that will be. I don't really want to leave completely."
 
-            y "I just think it's better than trying to do everything badly."
+        y "I just think it's better than trying to do everything badly."
 
-            d "I suppose."
+        d "I suppose."
 
-            y "{i}A break might be appropriate, but I've presented it as an all-or-nothing decision. I haven't explored whether a smaller role or temporary adjustment would work better.{/i}"
+        y "{i}A break might be appropriate, but I've presented it as an all-or-nothing decision. I haven't explored whether a smaller role or temporary adjustment would work better.{/i}"
 
-            y "{i}People shouldn't have to choose between doing everything and contributing nothing. Sometimes a little flexibility makes continued involvement possible.{/i}"
+        y "{i}People shouldn't have to choose between doing everything and contributing nothing. Sometimes a little flexibility makes continued involvement possible.{/i}"
 
 "Friday, 11:15 AM."
 
@@ -230,54 +230,54 @@ y "{i}That's encouraging. Person D is thinking about the wider team, not just th
 menu:
     "How do you respond to Person D's offer?"
 
-        "Tell them not to worry about the team and focus only on themselves.":
-            $ empathy_score += 1
-            $ support_score += 1
-            $ accountability_score -= 1
+    "Tell them not to worry about the team and focus only on themselves.":
+        $ empathy_score += 1
+        $ support_score += 1
+        $ accountability_score -= 1
 
-            y "Don't worry about anyone else. Just focus on yourself until things get better."
+        y "Don't worry about anyone else. Just focus on yourself until things get better."
 
-            d "I appreciate that, but I would still like to do something to help."
+        d "I appreciate that, but I would still like to do something to help."
 
-            y "I don't want you putting more pressure on yourself."
+        y "I don't want you putting more pressure on yourself."
 
-            d "I understand. I just don't want the others to think I don't care."
+        d "I understand. I just don't want the others to think I don't care."
 
-            y "{i}I'm trying to protect Person D from further pressure, but I'm not taking their wish to contribute seriously. Supporting someone includes listening to what they want to offer, not only deciding what they should avoid.{/i}"
+        y "{i}I'm trying to protect Person D from further pressure, but I'm not taking their wish to contribute seriously. Supporting someone includes listening to what they want to offer, not only deciding what they should avoid.{/i}"
 
-        "Ask what they could realistically contribute and check with the affected Trustee.":
-            $ empathy_score += 1
-            $ support_score += 1
-            $ accountability_score += 2
+    "Ask what they could realistically contribute and check with the affected Trustee.":
+        $ empathy_score += 1
+        $ support_score += 1
+        $ accountability_score += 2
 
-            y "Let's work out what you could realistically manage without putting your other commitments at risk."
+        y "Let's work out what you could realistically manage without putting your other commitments at risk."
 
-            y "You could offer to help with one small task, but let's check with the person who handled the rota first. We shouldn't assume they need help in a particular way."
+        y "You could offer to help with one small task, but let's check with the person who handled the rota first. We shouldn't assume they need help in a particular way."
 
-            d "That sounds fair. I could help prepare the volunteer information packs once the rota is finalised."
+        d "That sounds fair. I could help prepare the volunteer information packs once the rota is finalised."
 
-            y "Good. I'll ask whether that would be useful, and we can agree on a deadline that works for you."
+        y "Good. I'll ask whether that would be useful, and we can agree on a deadline that works for you."
 
-            d "Thanks. I feel better knowing there's a way I can contribute without taking on too much."
+        d "Thanks. I feel better knowing there's a way I can contribute without taking on too much."
 
-            y "{i}We're considering Person D's capacity, the other Trustee's workload, and what the event needs. Nobody has to guess what the others can manage.{/i}"
+        y "{i}We're considering Person D's capacity, the other Trustee's workload, and what the event needs. Nobody has to guess what the others can manage.{/i}"
 
-        "Tell Person D that they owe the team extra work to make up for falling behind.":
-            $ empathy_score -= 1
-            $ support_score -= 1
-            $ accountability_score += 0
+    "Tell Person D that they owe the team extra work to make up for falling behind.":
+        $ empathy_score -= 1
+        $ support_score -= 1
+        $ accountability_score += 0
 
-            y "The team has had to cover for you, so it would be fair for you to take on some extra work."
+        y "The team has had to cover for you, so it would be fair for you to take on some extra work."
 
-            d "I understand why you're saying that, but I'm not sure I can promise anything extra right now."
+        d "I understand why you're saying that, but I'm not sure I can promise anything extra right now."
 
-            y "Then we'll have to see what can be done."
+        y "Then we'll have to see what can be done."
 
-            d "Okay."
+        d "Okay."
 
-            y "{i}It's reasonable to care about fairness, but treating extra work as repayment risks ignoring the circumstances that caused the problem in the first place.{/i}"
+        y "{i}It's reasonable to care about fairness, but treating extra work as repayment risks ignoring the circumstances that caused the problem in the first place.{/i}"
 
-            y "{i}Fairness doesn't always mean everyone does the same amount of work. It means being transparent about responsibilities and making sure the arrangement is sustainable for everyone.{/i}"
+        y "{i}Fairness doesn't always mean everyone does the same amount of work. It means being transparent about responsibilities and making sure the arrangement is sustainable for everyone.{/i}"
 
 "The following week, the event preparations continue. The promotional materials are completed, the rota is covered, and the Trustees have a clearer understanding of the remaining work."
 
