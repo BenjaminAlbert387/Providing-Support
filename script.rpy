@@ -62,7 +62,7 @@ y "{i}They're acknowledging the problem, but they haven't explained what's going
 y "{i}As a Trustee, I need to care about the people doing the work. But I also need to consider the team members who are covering the unfinished tasks. Their time matters too.{/i}"
 
 menu:
-    "How do you respond to Person D?":
+    "How do you respond to Person D?"
 
         "Tell Person D that the team needs them to start delivering on their commitments.":
             $ empathy_score -= 1
@@ -138,7 +138,7 @@ y "{i}This is where good intentions need to turn into an actual plan. Reassuring
 y "{i}I need to avoid two extremes: expecting them to carry on as normal, or removing all their responsibilities without discussing what they can still manage.{/i}"
 
 menu:
-    "How do you help Person D manage their workload?":
+    "How do you help Person D manage their workload?"
 
         "Take all their tasks away immediately so they can focus on their personal situation.":
             $ empathy_score += 1
@@ -228,7 +228,7 @@ d "I agree. Is there anything I can do to help them, even if I can't take the ro
 y "{i}That's encouraging. Person D is thinking about the wider team, not just their own situation. Now I need to help turn that into something practical.{/i}"
 
 menu:
-    "How do you respond to Person D's offer?":
+    "How do you respond to Person D's offer?"
 
         "Tell them not to worry about the team and focus only on themselves.":
             $ empathy_score += 1
