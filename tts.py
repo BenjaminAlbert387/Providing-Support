@@ -18,7 +18,7 @@ VOICE_D = "cgSgspJ2msm6clMCkdW9"
 # Narrator (Sarah AI voice)
 VOICE_N = "FGY2WhTYpPnrIDTdsKH5"
 
-CSV_FILE = "dialogue.csv"
+CSV_FILE = "dialogue3.csv"
 OUTPUT_DIR = "voice_lines"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
