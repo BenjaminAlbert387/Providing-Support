@@ -5,7 +5,7 @@ import csv
 import os
 
 # ===== CONFIGURE =====
-API_KEY = "sk_b11ac1d49990354ee77425093a9aa5f74bdbd307e16a5086"
+API_KEY = "sk_c2ff71b896113a4f74e0c1ccdfc74e7a7130a5caf9da9f83"
 
 # Assign a voice ID to each character
 
