@@ -15,8 +15,8 @@ VOICE_Y = "bIHbv24MWmeRgasZH58o"
 # Person D (Jessica AI voice)
 VOICE_D = "cgSgspJ2msm6clMCkdW9"
 
-# Monologue (Sarah AI voice)
-VOICE_M = "FGY2WhTYpPnrIDTdsKH5"
+# Narrator (Sarah AI voice)
+VOICE_N = "FGY2WhTYpPnrIDTdsKH5"
 
 CSV_FILE = "dialogue.csv"
 OUTPUT_DIR = "voice_lines"
@@ -93,7 +93,7 @@ with open(CSV_FILE, "r", encoding="utf-8-sig", newline="") as f:
             voice_id = VOICE_Y
 
         elif character == "":
-            voice_id = VOICE_M
+            voice_id = VOICE_N
             
         else:
             print(f"Unknown character '{character}'. Skipping.")

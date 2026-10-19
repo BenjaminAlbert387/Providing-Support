@@ -41,7 +41,6 @@ label start:
 
     "Providing Support: Scenario Start!"
 
-
 scene black
 with fade
 
@@ -308,8 +307,79 @@ y "That would help. And if you need to change what you can take on, tell us earl
 d "I can do that. I don't want people having to guess what's happening."
 
 # Personal endings
+"Your choices impacted your empathy to others, the level of support and the amount of accountability you provided"
 
+# Empathy
+if empathy_score < 0:
+    "Your choices suggest that you may not have fully considered how Person D was experiencing their situation."
+    
+    "When someone is facing a challenge, it can be easy to make assumptions."
 
+    "Advice: Take time to listen before offering solutions."
+
+    "Ask open questions, avoid making assumptions about someone's circumstances, and acknowledge their perspective."
+
+elif empathy_score == 0:
+    "Your choices suggest a mixed approach to understanding Person D's situation." 
+    
+    "You may have recognised some of their difficulties while overlooking other factors"
+
+    "Advice: Try to understand both the practical and emotional aspects of someone's situation."
+
+else:
+    "Your choices suggest that you made an effort to understand Person D's perspective and recognise the challenges they were experiencing."
+
+    "Advice: Continue listening without judgement and acknowledging people's experiences."
+
+    "Remember that empathy does not require you to agree with every decision someone makes."
+
+# Support
+if support_score < 0:
+    "Your choices suggest that the support offered to Person D may not have fully addressed their needs."
+
+    "Dismissing difficulties or leaving someone to manage everything alone can make an already challenging situation harder."
+
+    "Advice: Ask what support would be useful before deciding what to do."
+
+    "Explore practical options and agree on realistic next steps."
+
+elif support_score == 0:
+    "Your choices suggest that you recognised the need to support Person D, but there may have been uncertainty about the most appropriate way to help."
+
+    "Advice: Discuss possible options together and agree on what is achievable."
+
+    "Avoid taking over responsibilities unnecessarily, but do not assume that someone can manage without help."
+
+else:
+    "Your choices suggest that you considered how to help Person D in a constructive and considerate way."
+
+    "Advice: Continue offering practical help while involving the person in decisions about their own situation."
+
+    "Agree on clear next steps, respect their preferences and check whether the support is working."
+
+# Accountability
+if accountability_score < 0:
+    "Your choices suggest that responsibilities or expectations may not have been addressed clearly enough."
+
+    "Avoiding a difficult conversation or failing to follow up can create uncertainty and affect other people in the charity."
+
+    "Advice: Be honest about what can realistically be achieved."
+
+    "Accountability should address the situation fairly without blaming someone for experiencing difficulties."
+
+elif accountability_score == 0:
+    "Your choices suggest that you attempted to balance understanding Person D's circumstances with maintaining their responsibilities."
+
+    "Advice: Combine understanding with clear communication. Agree on achievable commitments and identify any adjustments that may be needed."
+
+    "Supporting someone and maintaining accountability can work together."
+
+else:
+    "Your choices suggest that you considered both Person D's circumstances and the responsibilities involved."
+
+    "Advice: Continue setting clear, realistic expectations and following through on agreed actions."
+
+    "As a trustee, remember that accountability is about responsible decision-making and learning, not simply assigning blame."
 
 y "{i}I can't know exactly how things will go from here. Person D may need more support in the future, and the team may face another difficult deadline.{/i}"
 
