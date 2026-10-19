@@ -307,6 +307,10 @@ y "That would help. And if you need to change what you can take on, tell us earl
 
 d "I can do that. I don't want people having to guess what's happening."
 
+# Personal endings
+
+
+
 y "{i}I can't know exactly how things will go from here. Person D may need more support in the future, and the team may face another difficult deadline.{/i}"
 
 y "{i}But we have a better approach now: listen before assuming, agree on realistic commitments, and communicate changes before they become emergencies.{/i}"
